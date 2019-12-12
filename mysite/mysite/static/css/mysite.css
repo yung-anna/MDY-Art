@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline:1px dotted red; */
+    }
+
+#logo_img{
+    width: 100px;
+    height: 100px;
+    /* margin-right: 920px; */
+}
+
+.base{
+    display: flex;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+a{
+    color: black !important;
+    margin-right: 15px;
+}
+
+#mainNav{
+    margin-right: 40px;
+}

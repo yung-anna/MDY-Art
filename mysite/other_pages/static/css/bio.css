@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline:1px dotted red; */
+    }
+
+#container{
+    margin-top: 30px;
+    display: flex;
+}
+
+#image{
+    width: 400px;
+    margin-left: 50px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left-style: solid;
+    border-left-color: #bb4530;
+    padding-left: 50px;
+}
+
+

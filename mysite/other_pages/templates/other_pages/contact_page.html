@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% include_block page.body %}
+{% block body_class %}template-contactpage{% endblock %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+    <div id="container">
+        <div id="body">
+        {% for block in page.body %}
+            <div id="header">
+            {% if block.block_type == 'heading' %}
+                <h1>{{ block.value }}</h1>
+            {% endif %}
+            </div>
+            <div id="paragraph">
+            {% if block.block_type == 'paragraph' %}
+                <p>{{ block.value }}</p>
+            {% endif %}
+            </div>
+        {% endfor %}
+            <div id="form">
+                <form action="mailto:annayung396@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea class="form-control" rows="10"></textarea>
+                    </div>
+                    <input id="button" class="btn btn-danger" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div id="break">
+
+        </div>
+        <div id="other">
+            <div id="fb">
+                <img src="/static/img/facebook.jpeg">
+                <p><a href="https://www.facebook.com/Marie-Danielsson-Yung-Art-943159729108381/">Facebook</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

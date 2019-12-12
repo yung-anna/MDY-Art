@@ -1,0 +1,46 @@
+* {
+    margin: 0; padding: 0;
+}
+
+body { 
+    background-color: white;
+}
+
+.block {
+    overflow: hidden;
+    margin-top: 100px;
+    background: #fff;
+}
+
+.animation {
+    width: auto;
+    height: auto;
+    font-size: 0px;
+}
+
+.animation div {
+    display: inline-block;
+    width: auto;
+    float: none;
+}
+
+
+@keyframes smoothscroll { 
+    0% { 
+        margin-left: 0px; 
+    } 
+    100% { 
+        margin-left: -1320px; 
+    } 
+} 
+.block >div>div:first-of-type { 
+        -webkit-animation: smoothscroll 60s linear infinite; 
+        -moz-animation: smoothscroll 60s linear infinite; 
+        -ms-animation: smoothscroll 60s linear infinite; 
+        -o-animation: smoothscroll 60s linear infinite; 
+        animation: smoothscroll 60s linear infinite; 
+    }
+
+#img{
+    margin: 7px;
+}

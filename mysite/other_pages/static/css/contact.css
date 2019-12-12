@@ -1,0 +1,31 @@
+#container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#body{
+    width: 600px;
+    /* border: 1px solid red; */
+}
+
+#break{
+    width: 15px;
+    background: #bb4530;
+}
+
+#button{
+    background-color: #bb4530;
+}
+
+#other{
+    width: 400px;
+}
+
+img{
+    height: 20px;
+}
+
+#fb{
+    display: flex;
+}
