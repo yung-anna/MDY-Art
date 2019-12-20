@@ -1,31 +1,57 @@
 #container{
-    margin-top: 40px;
+    margin: 40px 0px 40px 0px; 
     display: flex;
     justify-content: space-evenly;
 }
 
 #body{
-    width: 600px;
+    width: 700px;
+    margin-bottom: 50px;
     /* border: 1px solid red; */
 }
 
 #break{
-    width: 15px;
+    width: 10px;
     background: #bb4530;
+    /* border: 1px solid red; */
 }
 
 #button{
     background-color: #bb4530;
+    border-color: #bb4530;
 }
 
 #other{
-    width: 400px;
+    width: 450px;
+    /* border: 1px solid red; */
 }
 
 img{
-    height: 20px;
+    margin-right: 5px;
+    height: 50px;
+    /* margin-top: 5px; */
 }
 
-#fb{
+#social{
+    display: flex;
+    flex-direction: column;
+}
+
+#two{
+    margin-top: 20px;
     display: flex;
 }
+
+.link{
+    font-size: 27px;
+    /* border: 1px solid red; */
+}
+
+.what{
+    margin-top: 5px;
+}
+
+#three{
+    display: flex;
+}
+

@@ -18,7 +18,7 @@
         {% for block in page.body %}
             <div id="header">
             {% if block.block_type == 'heading' %}
-                <h1>{{ block.value }}</h1>
+                <h1 class="display-4">{{ block.value }}</h1>
             {% endif %}
             </div>
             <div id="paragraph">
@@ -49,9 +49,18 @@
 
         </div>
         <div id="other">
-            <div id="fb">
-                <img src="/static/img/facebook.jpeg">
-                <p><a href="https://www.facebook.com/Marie-Danielsson-Yung-Art-943159729108381/">Facebook</a></p>
+            <div id="social">
+                <div id="one">
+                    <h1 class="display-4">Find Me Elsewhere</h1>
+                </div>
+                <div id="two">
+                    <img src="/static/img/facebook.jpeg">
+                    <p class="what"><a class="link" href="https://www.facebook.com/Marie-Danielsson-Yung-Art-943159729108381/">Facebook</a></p>
+                </div>
+                <div id="three">
+                    <img src="/static/img/insta_logo.jpeg">
+                    <p class="what"><a class="link" href="https://www.instagram.com/mariedanielssonyungart/">Instagram</a></p>
+                </div>
             </div>
         </div>
     </div>
