@@ -1,34 +1,35 @@
 #container{
-    margin: 40px 0px 40px 0px; 
+    margin: 40px 50px 40px 50px; 
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
 #body{
-    width: 700px;
-    margin-bottom: 50px;
+    width: auto;
+    margin-bottom: 25px;
     /* border: 1px solid red; */
 }
 
-#break{
-    width: 10px;
-    background: #bb4530;
-    /* border: 1px solid red; */
+#header{
+    text-align: center;
 }
 
-#button{
-    background-color: #bb4530;
-    border-color: #bb4530;
+#paragraph{
+    text-align: center;
 }
 
 #other{
-    width: 450px;
+    width: auto;
     /* border: 1px solid red; */
+    text-align: center;
 }
 
 img{
-    margin-right: 5px;
-    height: 50px;
+    /* margin-right: 5px;
+    height: 50px; */
     /* margin-top: 5px; */
 }
 
@@ -37,21 +38,11 @@ img{
     flex-direction: column;
 }
 
+#one{
+    height: 60px;
+}
+
 #two{
-    margin-top: 20px;
-    display: flex;
-}
-
-.link{
-    font-size: 27px;
-    /* border: 1px solid red; */
-}
-
-.what{
-    margin-top: 5px;
-}
-
-#three{
-    display: flex;
+    height: 50px;
 }
 

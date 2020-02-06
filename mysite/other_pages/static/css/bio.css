@@ -10,7 +10,8 @@
 }
 
 #image{
-    width: 400px;
+    width: 100%;
+    height: auto;
     margin-left: 50px;
 }
 
