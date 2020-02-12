@@ -69,3 +69,4 @@ class ContactPage(Page):
     content_panels = Page.content_panels + [
         StreamFieldPanel('body')
     ]
+

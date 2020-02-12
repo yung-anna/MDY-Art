@@ -4,30 +4,28 @@
     /* outline:1px dotted red; */
     box-sizing: border-box;
 }
-
-#container{
-    margin: 60px 50px 10px 50px;
-}
-
-.row{
+.container-two{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.masonry-block{
+    columns: 3 100px;
+    column-gap: 1.5rem;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-    flex: 33%;
+.masonry-block.image{
+    width: 150px;
+    margin: 1rem 1rem 1rem 1rem;
+    display: inline-block;
 }
 
-.column img{
-    margin: 5px;
-    vertical-align: middle;
-    width: 100%;
+.caption{
+    display: block;
 }
 
-.img_wrap{
-    padding: 10px;
+.masonry-block img{
+    display: block;
 }
 
 
