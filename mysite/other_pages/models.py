@@ -17,7 +17,7 @@ class Bio(Page):
     ])
     
     main_image = models.ForeignKey(
-        'wagtailimages.Image', on_delete=models.CASCADE, related_name='+', blank=True, null=True
+        'wagtailimages.Image', on_delete=models.PROTECT, related_name='+', blank=True, null=True
     )
 
     content_panels = Page.content_panels + [
@@ -40,10 +40,13 @@ class GalleryPageGalleryImage(Orderable):
         'wagtailimages.Image', on_delete=models.CASCADE, related_name='+'
     )
     caption = models.CharField(blank=True, max_length=250)
+    title = models.CharField(blank=True, max_length=100)
+
 
     panels = [
         ImageChooserPanel('image'),
         FieldPanel('caption'),
+        FieldPanel('title'),
     ]
 
 class ContentPage(Page):

@@ -12,7 +12,7 @@
 }
 .masonry-block{
     columns: 3 100px;
-    column-gap: 1.5rem;
+    column-gap: 2rem;
 }
 
 .masonry-block.image{
@@ -23,6 +23,8 @@
 
 .caption{
     display: block;
+    margin-top: 8px;
+    margin-bottom: 30px;
 }
 
 .masonry-block img{
